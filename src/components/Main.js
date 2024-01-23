@@ -1,3 +1,9 @@
+import { Outlet } from "react-router-dom";
+
 export default function Main() {
-  return <div>Hello this is the main div</div>;
+  return (
+    <div style={{ border: "1px solid yellow" }}>
+      <Outlet />
+    </div>
+  );
 }
