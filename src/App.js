@@ -1,11 +1,8 @@
 import Sidebar from "./components/Sidebar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <Sidebar />
-    </div>
-  );
+  return <BrowserRouter></BrowserRouter>;
 }
 
 export default App;
