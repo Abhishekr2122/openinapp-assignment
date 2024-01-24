@@ -6,9 +6,13 @@ import Papa from "papaparse";
 import "./upload.css";
 
 export default function Upload() {
+  const [tableData, setTableData] = useState({});
   const [parsedData, setParsedData] = useState([]);
   const [tableRows, setTableRows] = useState([]);
   const [values, setValues] = useState([]);
+
+  console.log("This is the values", values);
+  console.log("This is the tablerows ", tableRows);
 
   function handleChange(e) {
     Papa.parse(e.target.files[0], {
@@ -82,6 +86,7 @@ export default function Upload() {
               backgroundColor: "blue",
             }}
             onClick={function () {
+              setTableData({ tableRows, values });
               toast.success("File sucessfully uploaded");
             }}
           >
@@ -90,7 +95,7 @@ export default function Upload() {
           </button>
         </div>
       </div>
-      <div className="tablecontainer">
+      {/* <div className="tablecontainer">
         <table style={{ padding: "1rem", width: "100%" }}>
           <thead>
             <tr>
@@ -134,7 +139,8 @@ export default function Upload() {
             })}
           </tbody>
         </table>
-      </div>
+      </div> */}
+      <DataTable tableData={tableData} />
     </div>
   );
 }

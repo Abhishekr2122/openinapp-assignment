@@ -1,4 +1,5 @@
 import { NavLink } from "react-router-dom";
+import "./buttonicon.css";
 
 export default function ButtonIcon({ icon, text }) {
   return (
@@ -10,8 +11,9 @@ export default function ButtonIcon({ icon, text }) {
         textDecoration: "none",
         color: "black",
       }}
+      to={`/${text}`}
     >
-      <div>{icon}</div>
+      <div style={{ color: "grey" }}>{icon}</div>
       <p>{text}</p>
     </NavLink>
   );

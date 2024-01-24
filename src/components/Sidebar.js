@@ -5,7 +5,7 @@ import { IoStatsChartOutline } from "react-icons/io5";
 import { FaFileInvoice } from "react-icons/fa6";
 import { CgNotes } from "react-icons/cg";
 import { LuCalendarDays } from "react-icons/lu";
-import { IoNotifications } from "react-icons/io5";
+import { IoNotificationsOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
 
 export default function Sidebar() {
@@ -46,7 +46,7 @@ export default function Sidebar() {
           <ButtonIcon icon={<FaFileInvoice />} text="Invoice" />
           <ButtonIcon icon={<CgNotes />} text="Schedule" />
           <ButtonIcon icon={<LuCalendarDays />} text="Calender" />
-          <ButtonIcon icon={<IoNotifications />} text="Notification" />
+          <ButtonIcon icon={<IoNotificationsOutline />} text="Notification" />
           <ButtonIcon icon={<IoSettingsOutline />} text="Settings" />
         </div>
       </div>
