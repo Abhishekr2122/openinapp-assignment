@@ -1,13 +1,20 @@
 import { useState } from "react";
 import { LuUpload } from "react-icons/lu";
+import DataTable from "../components/DataTable";
+import toast from "react-hot-toast";
 
 export default function Upload() {
   const [inputFile, setInputFile] = useState("");
+
+  const localStorageData = localStorage.getItem("data");
+  console.log(localStorageData);
 
   return (
     <div
       style={{
         display: "flex",
+        flexDirection: "column",
+        gap: "10rem",
         alignItems: "center",
         justifyContent: "center",
       }}
@@ -58,7 +65,9 @@ export default function Upload() {
             }}
             disabled={inputFile ? false : true}
             onClick={function () {
-              console.log("The button is being clicked");
+              localStorage.setItem("data", JSON.stringify(inputFile));
+              setInputFile("");
+              toast.success("File sucessfully uploaded");
             }}
           >
             <LuUpload />
@@ -66,6 +75,7 @@ export default function Upload() {
           </button>
         </div>
       </div>
+      <DataTable />
     </div>
   );
 }
