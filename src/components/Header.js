@@ -11,10 +11,10 @@ export default function Header() {
         justifyContent: "space-between",
       }}
     >
-      <p style={{ marginLeft: "6px" }}>Current Header</p>
+      <p style={{ marginLeft: "20px" }}>Current Header</p>
       <div
         style={{
-          marginRight: "10px",
+          marginRight: "20px",
           display: "flex",
           flexDirection: "row",
           gap: "1rem",

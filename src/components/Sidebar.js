@@ -10,13 +10,37 @@ import { IoSettingsOutline } from "react-icons/io5";
 
 export default function Sidebar() {
   return (
-    <div style={{ border: "1px solid red", width: "100%", gridRow: "1/-1" }}>
-      <div style={{ display: "flex", flexDirection: "row", gap: "1rem" }}>
+    <div
+      style={{
+        border: "1px solid red",
+        width: "100%",
+        gridRow: "1/-1",
+        display: "flex",
+        flexDirection: "column",
+        gap: "1.2rem",
+      }}
+    >
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          gap: "1rem",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Logo source={"/logoimage.jpg"} />
         <p style={{ fontSize: "20px" }}>Base</p>
       </div>
       <div>
-        <div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            gap: "1.5rem",
+            padding: "1.5rem",
+          }}
+        >
           <ButtonIcon icon={<RxDashboard />} text="Dashboard" />
           <ButtonIcon icon={<IoStatsChartOutline />} text="Upload" />
           <ButtonIcon icon={<FaFileInvoice />} text="Invoice" />
