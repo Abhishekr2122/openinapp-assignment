@@ -12,7 +12,7 @@ export default function DataTable({ tableData }) {
       <table style={{ padding: "1rem", width: "100%" }}>
         <thead>
           <tr>
-            {tableRows.map((rows, index) => {
+            {tableRows?.map((rows, index) => {
               return (
                 <th key={index} style={{ padding: "12px", textAlign: "left" }}>
                   {rows}
@@ -22,7 +22,7 @@ export default function DataTable({ tableData }) {
           </tr>
         </thead>
         <tbody>
-          {values.map((value, index) => {
+          {values?.map((value, index) => {
             return (
               <tr
                 key={index}
@@ -31,7 +31,7 @@ export default function DataTable({ tableData }) {
                   borderRadius: "4px",
                 }}
               >
-                {value.map((val, i) => {
+                {value?.map((val, i) => {
                   return (
                     <td
                       key={i}
@@ -40,7 +40,17 @@ export default function DataTable({ tableData }) {
                         textAlign: "left",
                       }}
                     >
-                      {val}
+                      {i === 1 ? (
+                        <a
+                          href={`${val}`}
+                          style={{ textDecoration: "none" }}
+                          target="_blank"
+                        >
+                          {val}
+                        </a>
+                      ) : (
+                        val
+                      )}
                     </td>
                   );
                 })}
