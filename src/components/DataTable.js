@@ -1,4 +1,6 @@
 import "./datatable.css";
+import { RiArrowDropDownLine } from "react-icons/ri";
+
 export default function DataTable({ tableData }) {
   const { tableRows, values } = tableData;
   console.log(
@@ -45,9 +47,22 @@ export default function DataTable({ tableData }) {
                           href={`${val}`}
                           style={{ textDecoration: "none" }}
                           target="_blank"
+                          rel="noreferrer"
                         >
                           {val}
                         </a>
+                      ) : // val
+                      i === 3 ? (
+                        <button
+                          style={{
+                            backgroundColor: "transparent",
+                            border: "1px solid grey",
+                            borderRadius: "4px",
+                            cursor: "pointer",
+                          }}
+                        >
+                          Select Tags {<RiArrowDropDownLine />}
+                        </button>
                       ) : (
                         val
                       )}
