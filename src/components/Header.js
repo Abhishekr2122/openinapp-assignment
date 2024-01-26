@@ -1,4 +1,4 @@
-import { IoMdNotificationsOutline } from "react-icons/io";
+import { MdNotificationsNone } from "react-icons/md";
 
 export default function Header() {
   return (
@@ -23,7 +23,9 @@ export default function Header() {
           left: "1114px",
           position: "absolute",
         }}
-      ></div>
+      >
+        <MdNotificationsNone />
+      </div>
     </>
   );
 }
