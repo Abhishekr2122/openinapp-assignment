@@ -3,7 +3,13 @@ export default function Logo({ source }) {
     <img
       src={source}
       alt="no data found"
-      style={{ height: "50px", width: "50px", borderRadius: "50px" }}
+      style={{
+        height: "42px",
+        width: "42px",
+        top: "50px",
+        left: "56px",
+        position: "absolute",
+      }}
     />
   );
 }

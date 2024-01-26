@@ -5,6 +5,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #f8faff;
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;

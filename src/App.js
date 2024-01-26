@@ -8,6 +8,7 @@ import Calender from "./pages/Calender";
 import Notification from "./pages/Notification";
 import Settings from "./pages/Settings";
 import { Toaster } from "react-hot-toast";
+import Login from "./pages/Login";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="Notification" element={<Notification />} />
             <Route path="Settings" element={<Settings />} />
           </Route>
+          <Route path="Login" element={<Login />} />
         </Routes>
       </BrowserRouter>
       <Toaster
