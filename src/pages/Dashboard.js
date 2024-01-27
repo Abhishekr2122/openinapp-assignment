@@ -2,6 +2,10 @@ import { LiaMoneyCheckAltSolid } from "react-icons/lia";
 import { LuTags } from "react-icons/lu";
 import { GoThumbsup } from "react-icons/go";
 import { LuUsers } from "react-icons/lu";
+import { FaLaptopCode } from "react-icons/fa6";
+import { BsEmojiSmile } from "react-icons/bs";
+import { AiOutlineThunderbolt } from "react-icons/ai";
+import { LiaMoneyBillWaveSolid } from "react-icons/lia";
 
 export default function Dashboard() {
   return (
@@ -133,6 +137,118 @@ export default function Dashboard() {
             >
               +2.5%
             </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          padding: "40px",
+          gap: "2rem",
+        }}
+      >
+        <p style={{ fontWeight: "600", fontSize: "25px" }}>We help you</p>
+        <div style={{ display: "flex", flexDirection: "row", gap: "8rem" }}>
+          <div
+            style={{
+              height: "250px",
+              width: "200px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "12px",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <div>
+              <FaLaptopCode
+                style={{ color: "#8080ff", height: "80px", width: "80px" }}
+              />
+            </div>
+            <p>Grow</p>
+            <p
+              style={{ color: "#8080ff", fontWeight: "600", fontSize: "20px" }}
+            >
+              Audience
+            </p>
+          </div>
+          <div
+            style={{
+              display: "flex",
+              height: "250px",
+              width: "200px",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "12px",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <div>
+              <BsEmojiSmile
+                style={{ color: "lightpink", height: "70px", width: "70px" }}
+              />
+            </div>
+            <p>Boost</p>
+            <p
+              style={{
+                color: "lightpink",
+                fontWeight: "600",
+                fontSize: "20px",
+              }}
+            >
+              Engagement
+            </p>
+          </div>
+          <div
+            style={{
+              height: "250px",
+              width: "200px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "12px",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <div>
+              <AiOutlineThunderbolt
+                style={{ color: "#4d4dff", height: "65px", width: "65px" }}
+              />
+            </div>
+            <p>Go</p>
+            <p
+              style={{ color: "#4d4dff", fontWeight: "600", fontSize: "20px" }}
+            >
+              Viral...
+            </p>
+          </div>
+          <div
+            style={{
+              height: "250px",
+              width: "200px",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "12px",
+              backgroundColor: "#FFFFFF",
+            }}
+          >
+            <div>
+              <LiaMoneyBillWaveSolid
+                style={{ color: "#66ff66", height: "80px", width: "80px " }}
+              />
+            </div>
+            <p>Get</p>
+            <p
+              style={{ color: "#66ff66", fontWeight: "600", fontSize: "20px" }}
+            >
+              Brand deals
+            </p>
           </div>
         </div>
       </div>
