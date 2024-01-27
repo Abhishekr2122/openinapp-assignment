@@ -6,7 +6,6 @@ export default function Invoice() {
   return (
     <div
       style={{
-        border: "1px solid yellow",
         height: "1385px",
         display: "flex",
         justifyContent: "center",

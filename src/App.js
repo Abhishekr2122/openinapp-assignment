@@ -16,13 +16,14 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<AppLayout />}>
-            <Route path="Dashboard" element={<Dashboard />} />
-            <Route path="Upload" element={<Upload />} />
-            <Route path="Invoice" element={<Invoice />} />
-            <Route path="Schedule" element={<Schedule />} />
-            <Route path="Calender" element={<Calender />} />
-            <Route path="Notification" element={<Notification />} />
-            <Route path="Settings" element={<Settings />} />
+            <Route path="/" element={<Dashboard />} />
+            <Route path="Dashboard/crrPage" element={<Dashboard />} />
+            <Route path="Upload/crr/page" element={<Upload />} />
+            <Route path="Invoice/crrPage" element={<Invoice />} />
+            <Route path="Schedule/crrPage" element={<Schedule />} />
+            <Route path="Calender/crrPage" element={<Calender />} />
+            <Route path="Notification/crrPage" element={<Notification />} />
+            <Route path="Settings/crrPage" element={<Settings />} />
           </Route>
           <Route path="Login" element={<Login />} />
         </Routes>
