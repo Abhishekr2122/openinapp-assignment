@@ -33,89 +33,93 @@ export default function Upload() {
   }
 
   return (
-    <div
-      style={{
-        width: "596px",
-        height: "367px",
-        position: "absolute",
-        top: "218px",
-        left: "518px",
-        borderRadius: "8px",
-        backgroundColor: "#FFFFFF",
-      }}
-    >
+    <>
       <div
         style={{
-          width: "564px",
-          height: "258px",
-          position: "relative",
-          top: "16px",
-          left: "16px",
+          width: "596px",
+          height: "367px",
+
           borderRadius: "8px",
-          border: "1px dotted #EBEBEB",
+          backgroundColor: "#FFFFFF",
+          border: "10px solid blue",
         }}
+        className="upload"
       >
         <div
           style={{
-            width: "267px",
-            height: "76px",
-            position: "relative",
-            top: "114px",
-            left: "165px",
-          }}
-        >
-          <p>
-            Drop your excel sheet here or{" "}
-            <span>
-              <input
-                type="file"
-                name="inputdata"
-                id="data"
-                onChange={handleChange}
-                accept=".csv"
-              />
-            </span>
-          </p>
-        </div>
-
-        <button
-          style={{
-            height: "56px",
             width: "564px",
+            height: "258px",
             position: "absolute",
-            top: "295px",
+            top: "16px",
             left: "16px",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             borderRadius: "8px",
-            padding: "8px,16px,8px,8px",
-            gap: "8px",
-            backgroundColor: "#605BFF",
-            borderStyle: "none",
-            cursor: "pointer",
-          }}
-          onClick={function () {
-            setTableData({ tableRows, values });
-            toast.success("File sucessfully uploaded");
+            border: "1px dotted #EBEBEB",
           }}
         >
-          <LuUpload style={{ color: "white", height: "24px", width: "24px" }} />
-          <p
+          <div
             style={{
-              color: "#FFFFFF",
-              width: "46px",
-              height: "24px",
-              fontWeight: "600",
-              fontSize: "14px",
-              lineHeight: "24px",
+              position: "absolute",
+              width: "267px",
+              height: "76px",
+              top: "114px",
+              left: "165px",
             }}
           >
-            Upload
-          </p>
-        </button>
-      </div>
-      {/* <div className="tablecontainer">
+            <p>
+              Drop your excel sheet here or{" "}
+              <span>
+                <input
+                  type="file"
+                  name="inputdata"
+                  id="data"
+                  onChange={handleChange}
+                  accept=".csv"
+                  onDrop={handleChange}
+                />
+              </span>
+            </p>
+          </div>
+
+          <button
+            style={{
+              height: "56px",
+              width: "564px",
+              position: "absolute",
+              top: "285px",
+              left: "0px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              borderRadius: "8px",
+              padding: "8px,16px,8px,8px",
+              gap: "8px",
+              backgroundColor: "#605BFF",
+              borderStyle: "none",
+              cursor: "pointer",
+            }}
+            onClick={function () {
+              setTableData({ tableRows, values });
+              toast.success("File sucessfully uploaded");
+            }}
+          >
+            <LuUpload
+              style={{ color: "white", height: "24px", width: "24px" }}
+            />
+            <p
+              style={{
+                color: "#FFFFFF",
+                width: "46px",
+                height: "24px",
+                fontWeight: "600",
+                fontSize: "14px",
+                lineHeight: "24px",
+              }}
+            >
+              Upload
+            </p>
+          </button>
+        </div>
+        {/* <div className="tablecontainer">
         <table style={{ padding: "1rem", width: "100%" }}>
           <thead>
             <tr>
@@ -160,7 +164,9 @@ export default function Upload() {
           </tbody>
         </table>
       </div> */}
+      </div>
+
       {/* <DataTable tableData={tableData} /> */}
-    </div>
+    </>
   );
 }

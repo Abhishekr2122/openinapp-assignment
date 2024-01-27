@@ -1,6 +1,11 @@
 .tablecontainer {
+  border: 1px solid green;
+  height: 497px;
+  width: "1065px";
+  position: absolute;
   background-color: rgb(245, 241, 241);
-  border-radius: 4px;
+  border-radius: 8px;
+
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;

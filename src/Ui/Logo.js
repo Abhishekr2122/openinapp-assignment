@@ -6,9 +6,6 @@ export default function Logo({ source }) {
       style={{
         height: "42px",
         width: "42px",
-        top: "50px",
-        left: "56px",
-        position: "absolute",
       }}
     />
   );

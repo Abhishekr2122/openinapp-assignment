@@ -1,1 +1,7 @@
-
+.upload {
+  overflow: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+    scroll-behavior: smooth;
+  }
+}

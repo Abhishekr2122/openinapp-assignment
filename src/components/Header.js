@@ -1,31 +1,17 @@
-import { MdNotificationsNone } from "react-icons/md";
-
 export default function Header() {
   return (
-    <>
-      <p
-        style={{
-          width: "1052px",
-          height: "32px",
-          top: "49px",
-          left: "248px",
-          gap: "16px",
-          position: "absolute",
-        }}
-      >
-        Upload CSV
-      </p>
-      <div
-        style={{
-          width: "296px",
-          height: "32.93px",
-          top: "50px",
-          left: "1114px",
-          position: "absolute",
-        }}
-      >
-        <MdNotificationsNone />
-      </div>
-    </>
+    <div
+      style={{
+        position: "relative",
+        left: "-195px",
+        border: "1px solid blue",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        height: "32px",
+      }}
+    >
+      This is the header
+    </div>
   );
 }
