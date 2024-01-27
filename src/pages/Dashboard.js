@@ -6,6 +6,11 @@ import { FaLaptopCode } from "react-icons/fa6";
 import { BsEmojiSmile } from "react-icons/bs";
 import { AiOutlineThunderbolt } from "react-icons/ai";
 import { LiaMoneyBillWaveSolid } from "react-icons/lia";
+import { FaInstagram } from "react-icons/fa6";
+import { MdCall } from "react-icons/md";
+import { RiYoutubeLine } from "react-icons/ri";
+import { CiLinkedin } from "react-icons/ci";
+import { SlSocialSpotify } from "react-icons/sl";
 
 export default function Dashboard() {
   return (
@@ -251,6 +256,74 @@ export default function Dashboard() {
             </p>
           </div>
         </div>
+      </div>
+      <div
+        style={{
+          padding: "40px",
+          border: "1px solid yellow",
+          display: "flex",
+          height: "15%",
+          width: "80%",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          position: "relative",
+          left: "85px",
+          borderRadius: "15px",
+          backgroundColor: "#0a66fa",
+          top: "130px",
+        }}
+      >
+        <div>
+          <p style={{ color: "white", textAlign: "center", fontSize: "20px" }}>
+            Become a
+          </p>
+          <p style={{ color: "white", fontSize: "30px", fontWeight: "800" }}>
+            Super Creator
+          </p>
+          <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+            <button
+              style={{
+                borderStyle: "none",
+                width: "100%",
+                height: "25%",
+                borderRadius: "15px",
+                cursor: "pointer",
+                fontWeight: "700",
+              }}
+            >
+              Login
+            </button>
+          </a>
+        </div>
+      </div>
+      <div
+        style={{
+          position: "relative",
+          top: "314px",
+          height: "100px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "10rem",
+          backgroundColor: "#FFFFFF",
+          borderRadius: "8px",
+          marginLeft: "1px",
+        }}
+      >
+        <MdCall style={{ height: "30px", width: "30px", color: "brown" }} />
+        <FaInstagram
+          style={{ height: "30px", width: "30px", color: "tomato" }}
+        />
+        <RiYoutubeLine
+          style={{ height: "30px", width: "30px", color: "red" }}
+        />
+        <CiLinkedin
+          style={{ height: "30px", width: "30px", color: "#0a66fa" }}
+        />
+        <SlSocialSpotify
+          style={{ height: "30px", width: "30px", color: "green" }}
+        />
       </div>
     </div>
   );
