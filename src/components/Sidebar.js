@@ -13,7 +13,7 @@ export default function Sidebar() {
     <div
       style={{
         gridRow: "1/-1",
-        border: "1px solid yellow",
+
         height: "1047px",
         width: "218px",
         backgroundColor: "#FFFFFF",

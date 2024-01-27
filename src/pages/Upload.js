@@ -38,10 +38,14 @@ export default function Upload() {
         style={{
           width: "596px",
           height: "367px",
+          position: "absolute",
+          top: "218px",
+          left: "350px",
+          display: "flex",
+          flexDirection: "column",
 
           borderRadius: "8px",
           backgroundColor: "#FFFFFF",
-          border: "10px solid blue",
         }}
         className="upload"
       >
@@ -166,7 +170,7 @@ export default function Upload() {
       </div> */}
       </div>
 
-      {/* <DataTable tableData={tableData} /> */}
+      <DataTable tableData={tableData} />
     </>
   );
 }

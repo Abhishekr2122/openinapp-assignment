@@ -1,8 +1,9 @@
 .tablecontainer {
-  border: 1px solid green;
   height: 497px;
   width: "1065px";
   position: absolute;
+  top: 689px;
+  left: 130px;
   background-color: rgb(245, 241, 241);
   border-radius: 8px;
 

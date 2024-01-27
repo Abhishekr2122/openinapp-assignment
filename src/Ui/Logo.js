@@ -6,6 +6,7 @@ export default function Logo({ source }) {
       style={{
         height: "42px",
         width: "42px",
+        borderRadius: "20px",
       }}
     />
   );
