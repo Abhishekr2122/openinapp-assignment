@@ -97,21 +97,10 @@ export default function Login({ setSignedIn }) {
           width: "50%",
           alignItems: "center",
           justifyContent: "center",
-          // border: "1px solid green",
+          border: "1px solid green",
         }}
       >
-        <div
-          style={{
-            height: "100vh",
-            display: "flex",
-
-            flexDirection: "column",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "0.5rem",
-            // border: "1px solid blue",
-          }}
-        >
+        <div className="subcontainer">
           <div style={{ display: "flex", flexDirection: "column" }}>
             <p
               style={{
@@ -153,23 +142,12 @@ export default function Login({ setSignedIn }) {
             </div>
           </div>
 
-          <div
-            style={{
-              width: "422.64px",
-              height: "390.8px",
-              borderRadius: "10px",
-              backgroundColor: "#FFFFFF",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "column",
-              gap: "1rem",
-            }}
-          >
+          <div className="loginform">
             <form
               style={{
                 padding: "20px",
               }}
+              className="form"
             >
               <label
                 style={{
