@@ -31,6 +31,40 @@
   border: 1px solid blue;
 }
 
+.childcontainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.para1 {
+  /* width: "143.81px",
+                height: "48.3px",
+                fontFamily: "monospace",
+                fontWeight: "700",
+                fontSize: "36px",
+                lineHeight: "43.88px", */
+  width: 143.81px;
+  height: 48.3px;
+  font-family: monospace;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43.88px;
+  border: 1px solid red;
+}
+
+.btncontainer {
+  display: flex;
+  gap: 2rem;
+}
+
+.btn1 {
+  width: 197.6px;
+  height: 32.93px;
+  border-radius: 10px;
+  border-style: none;
+  background-color: #ffffff;
+}
+
 @media screen and (max-width: 1141.6px) {
   .footer {
     gap: 7rem;
@@ -52,5 +86,26 @@
 @media screen and (max-width: 826.4px) {
   .loginform {
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 867.4px) {
+  .para1 {
+    font-size: 25px;
+    width: 100px;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 867.4px) {
+  .btncontainer {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 867.4px) {
+  .btn1 {
+    width: 190px;
+    border: 1px solid yellow;
   }
 }

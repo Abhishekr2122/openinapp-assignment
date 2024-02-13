@@ -101,42 +101,13 @@ export default function Login({ setSignedIn }) {
         }}
       >
         <div className="subcontainer">
-          <div style={{ display: "flex", flexDirection: "column" }}>
-            <p
-              style={{
-                width: "143.81px",
-                height: "48.3px",
-                fontFamily: "monospace",
-                fontWeight: "700",
-                fontSize: "36px",
-                lineHeight: "43.88px",
-              }}
-            >
-              Sign In
-            </p>
-            <div style={{ display: "flex", gap: "2rem" }}>
-              <button
-                style={{
-                  width: "197.6px",
-                  height: "32.93px",
-
-                  borderStyle: "none",
-                  backgroundColor: "#FFFFFF",
-                  borderRadius: "10px",
-                }}
-              >
+          <div className="childcontainer">
+            <p className="para1">Sign In</p>
+            <div className="btncontainer">
+              <button className="btn1">
                 <FcGoogle /> Sign in with google
               </button>
-              <button
-                style={{
-                  width: "197.6px",
-                  height: "32.93px",
-
-                  borderRadius: "10px",
-                  borderStyle: "none",
-                  backgroundColor: "#FFFFFF",
-                }}
-              >
+              <button className="btn1">
                 <TiVendorApple /> Sign in with apple
               </button>
             </div>
