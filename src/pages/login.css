@@ -1,0 +1,27 @@
+.footer {
+  width: 99.8%;
+  height: 48px;
+  border: 1px solid yellow;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+}
+
+@media screen and (max-width: 1141.6px) {
+  .footer {
+    gap: 7rem;
+  }
+}
+
+@media screen and (max-width: 1015.2px) {
+  .footer {
+    gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 826.4px) {
+  .footer {
+    gap: 3rem;
+  }
+}

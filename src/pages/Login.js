@@ -5,6 +5,7 @@ import { RxDiscordLogo } from "react-icons/rx";
 import { FcGoogle } from "react-icons/fc";
 import { TiVendorApple } from "react-icons/ti";
 import { useNavigate } from "react-router-dom";
+import "./login.css";
 
 export default function Login({ setSignedIn }) {
   const navigate = useNavigate();
@@ -24,7 +25,8 @@ export default function Login({ setSignedIn }) {
           height: "100vh",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "space-between",
+          alignItems: "center",
+          justifyContent: "space-around",
           backgroundColor: "#605BFF",
         }}
       >
@@ -37,20 +39,22 @@ export default function Login({ setSignedIn }) {
             fontSize: "72px",
             lineHeight: "87.77px",
             color: "#FFFFFF",
+            textAlign: "center",
           }}
         >
           BASE
         </p>
         <div
-          style={{
-            width: "99.8%",
-            height: "48px",
-
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: "8rem",
-          }}
+          // style={{
+          //   width: "99.8%",
+          //   height: "48px",
+          //   border: "1px solid yellow",
+          //   display: "flex",
+          //   alignItems: "center",
+          //   justifyContent: "center",
+          //   gap: "8rem",
+          // }}
+          className="footer"
         >
           <BsGithub
             style={{
