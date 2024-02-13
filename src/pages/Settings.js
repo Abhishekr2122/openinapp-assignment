@@ -20,7 +20,7 @@ export default function Settings() {
         No settings to change
         <span>
           <IoHome
-            style={{ color: "blueviolet", cursor: "pointer", height: "60px" }}
+            style={{ color: "#4d4dff", cursor: "pointer", height: "60px" }}
             onClick={function () {
               navigate("/dashboard");
             }}

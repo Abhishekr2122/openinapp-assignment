@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import Main from "../components/Main";
 import Sidebar from "../components/Sidebar";
 
-export default function AppLayout() {
+export default function AppLayout({ setSignedIn }) {
   return (
     <div
       style={{
@@ -18,7 +18,7 @@ export default function AppLayout() {
         // grid-template-rows: auto 1fr;
       }}
     >
-      <Header />
+      <Header setSignedIn={setSignedIn} />
       <Main />
       <Sidebar />
     </div>

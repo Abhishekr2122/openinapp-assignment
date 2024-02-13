@@ -20,7 +20,7 @@ export default function Calender() {
         No calender to show
         <span>
           <IoHome
-            style={{ color: "blueviolet", cursor: "pointer", height: "60px" }}
+            style={{ color: "#4d4dff", cursor: "pointer", height: "60px" }}
             onClick={function () {
               navigate("/dashboard");
             }}

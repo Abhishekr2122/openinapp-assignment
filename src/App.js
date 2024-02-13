@@ -9,23 +9,34 @@ import Notification from "./pages/Notification";
 import Settings from "./pages/Settings";
 import { Toaster } from "react-hot-toast";
 import Login from "./pages/Login";
+import { useState } from "react";
 
 function App() {
+  const [signedIn, setSignedIn] = useState(false);
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<AppLayout />}>
-            <Route path="/" element={<Dashboard />} />
+          <Route
+            path="/"
+            element={
+              signedIn ? (
+                <AppLayout setSignedIn={setSignedIn} />
+              ) : (
+                <Login setSignedIn={setSignedIn} />
+              )
+            }
+          >
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="Dashboard" element={<Dashboard />} />
             <Route path="Upload" element={<Upload />} />
             <Route path="Invoice" element={<Invoice />} />
             <Route path="Schedule" element={<Schedule />} />
             <Route path="Calender" element={<Calender />} />
             <Route path="Notification" element={<Notification />} />
-            <Route path="Settings" element={<Settings />} />
+            <Route path="Settings:crrPage=Settings" element={<Settings />} />
           </Route>
-          <Route path="Login" element={<Login />} />
+          {/* <Route path="Login" element={<Login />} /> */}
         </Routes>
       </BrowserRouter>
       <Toaster

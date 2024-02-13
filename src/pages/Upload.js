@@ -11,9 +11,6 @@ export default function Upload() {
   const [tableRows, setTableRows] = useState([]);
   const [values, setValues] = useState([]);
 
-  console.log("This is the values", values);
-  console.log("This is the tablerows ", tableRows);
-
   function handleChange(e) {
     Papa.parse(e.target.files[0], {
       header: true,

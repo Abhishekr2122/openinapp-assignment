@@ -3,6 +3,7 @@ import { RiArrowDropDownLine } from "react-icons/ri";
 
 export default function DataTable({ tableData }) {
   const { tableRows, values } = tableData;
+
   console.log(
     "This is the tableRows in Datatablecomponent",
     tableData.tableRows

@@ -20,7 +20,7 @@ export default function Schedule() {
         No meeting is scheduled
         <span>
           <IoHome
-            style={{ color: "blueviolet", cursor: "pointer", height: "60px" }}
+            style={{ color: "#4d4dff", cursor: "pointer", height: "60px" }}
             onClick={function () {
               navigate("/dashboard");
             }}

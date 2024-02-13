@@ -1,7 +1,8 @@
 import { IoNotificationsOutline } from "react-icons/io5";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
+import { TbLogout2 } from "react-icons/tb";
 
-export default function Header() {
+export default function Header({ setSignedIn }) {
   return (
     <div
       style={{
@@ -22,7 +23,7 @@ export default function Header() {
           marginLeft: "10px",
         }}
       >
-        Upload CSV
+        OpeninApp
       </p>
       <div
         style={{
@@ -34,6 +35,19 @@ export default function Header() {
           gap: "1rem",
         }}
       >
+        <button
+          style={{
+            backgroundColor: "transparent",
+            borderStyle: "none",
+            cursor: "pointer",
+          }}
+          onClick={function () {
+            setSignedIn(false);
+          }}
+        >
+          <TbLogout2 style={{ color: "blue", height: "23px", width: "18px" }} />
+        </button>
+
         <NavLink to="/notification">
           <IoNotificationsOutline style={{ height: "23px", width: "18px" }} />
         </NavLink>

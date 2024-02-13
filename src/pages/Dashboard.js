@@ -306,24 +306,36 @@ export default function Dashboard() {
           alignItems: "center",
           justifyContent: "center",
           gap: "10rem",
-          backgroundColor: "#FFFFFF",
+
           borderRadius: "8px",
           marginLeft: "1px",
         }}
       >
-        <MdCall style={{ height: "30px", width: "30px", color: "brown" }} />
-        <FaInstagram
-          style={{ height: "30px", width: "30px", color: "tomato" }}
-        />
-        <RiYoutubeLine
-          style={{ height: "30px", width: "30px", color: "red" }}
-        />
-        <CiLinkedin
-          style={{ height: "30px", width: "30px", color: "#0a66fa" }}
-        />
-        <SlSocialSpotify
-          style={{ height: "30px", width: "30px", color: "green" }}
-        />
+        <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+          <MdCall style={{ height: "30px", width: "30px", color: "brown" }} />
+        </a>
+
+        <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+          <FaInstagram
+            style={{ height: "30px", width: "30px", color: "tomato" }}
+          />
+        </a>
+
+        <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+          <RiYoutubeLine
+            style={{ height: "30px", width: "30px", color: "red" }}
+          />
+        </a>
+        <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+          <CiLinkedin
+            style={{ height: "30px", width: "30px", color: "#0a66fa" }}
+          />
+        </a>
+        <a href="https://openinapp.com/" target="_blank" rel="noreferrer">
+          <SlSocialSpotify
+            style={{ height: "30px", width: "30px", color: "green" }}
+          />
+        </a>
       </div>
     </div>
   );
